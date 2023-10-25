@@ -1,5 +1,10 @@
-## Dataset 
-This is a dataset released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]()
+# Dataset Description
+This is a dataset released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]().
+The dataset is hierarchically organized, comprising the following components:
+- User (N=94)
+- ChatGPT conversation links and logs (N=249)
+- User's recollected experience data on dissatisfactory ChatGPT responses (N=377)
+- User's strategies to respond to the dissatisfactory response (N=459)
 
 ## Structure
 The dataset is in JSON format. The structure is as follows:
@@ -17,7 +22,7 @@ user_info
     └── knowledge_level_reason
 chatgpt_general_experiences
 ├── chatgpt_usage_language
-│   ├── language
+│   ├── usage_language
 │   ├── writing_level
 │   └── reading_level
 ├── chatgpt_usage_purpose
@@ -26,12 +31,12 @@ chatgpt_general_experiences
 ├── chatgpt_overall_satisfaction
 │   ├── satisfaction_level
 │   └── satisfaction_level_reason
-└── chat_data_1
+└── chat_data_n
     ├── chat_date
     ├── memory_level
     ├── model_version
     ├── chat_usage_language
-    ├── chat_usage_reason
+    ├── chat_usage_language_reason
     ├── chat_purpose
     ├── why_chatgpt
     ├── dissatisfaction_responses (list)
@@ -61,7 +66,7 @@ chatgpt_general_experiences
         └── content
 
 ```
-## Each field's description.
+## Description of Each field
 | **Field**                            	| **Type**       	| **Description**                                                                                                                                                                                                                                          	| **Example**                                                                        	|
 |--------------------------------------	|----------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------	|
 | **user_id**                          	| string         	| Unique identifier for a user                                                                                                                                                                                                                             	| cCbpmERyodVxuVXXHFBl6Q2h                                                           	|
