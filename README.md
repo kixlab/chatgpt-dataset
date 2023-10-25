@@ -1,5 +1,6 @@
 # Dataset Description
 This is a dataset released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]().
+
 The dataset is hierarchically organized, comprising the following components:
 - User (N=94)
 - ChatGPT conversation links and logs (N=249)
