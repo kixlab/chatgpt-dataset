@@ -9,6 +9,7 @@ The dataset is hierarchically organized, comprising the following components:
 
 ## Structure
 The dataset is in JSON format. The structure is as follows:
+
 NOTE: Each field of this dataset is self-reported data from the user.
 
 ```
@@ -29,42 +30,43 @@ chatgpt_general_experiences
 ├── chatgpt_usage_purpose
 ├── chatgpt_usage_period
 ├── chatgpt_usage_frequency
-├── chatgpt_overall_satisfaction
-│   ├── satisfaction_level
-│   └── satisfaction_level_reason
-└── chat_data_n
-    ├── chat_date
-    ├── memory_level
-    ├── model_version
-    ├── chat_usage_language
-    ├── chat_usage_language_reason
-    ├── chat_purpose
-    ├── why_chatgpt
-    ├── dissatisfaction_responses (list)
-    │   ├── dissatisfaction_chatgpt_response 
-    │   ├── dissatisfaction_chat_num
-    │   ├── dissatisfaction_category_score
-    │   │   ├── D_intent
-    │   │   ├── D_depth
-    │   │   ├── D_accuracy
-    │   │   ├── D_transparency
-    │   │   ├── D_refuse
-    │   │   ├── D_ethics
-    │   │   └── D_format
-    │   ├── dissatisfaction_overall_score
-    │   ├── dissatisfaction_reason
-    │   └── tactics (list)
-    │       ├── tactic_type
-    │       ├── tactic_prompt
-    │       ├── tactic_prompt_chat_num
-    │       ├── tactic_effectiveness_score
-    │       ├── tactic_effectiveness_reason
-    │       ├── tactic_theme
-    │       └── tactic_code
-    ├── chat_shared_link
-    └── chat_log (list)
-        ├── role
-        └── content
+└── chatgpt_overall_satisfaction
+    ├── satisfaction_level
+    └── satisfaction_level_reason
+chat_data_n
+├── chat_date
+├── memory_level
+├── model_version
+├── chat_usage_language
+├── chat_usage_language_reason
+├── chat_purpose
+├── why_chatgpt
+├── dissatisfaction_responses (list)
+│   ├── dissatisfaction_chatgpt_response 
+│   ├── dissatisfaction_chat_num
+│   ├── dissatisfaction_category_score
+│   │   ├── D_intent
+│   │   ├── D_depth
+│   │   ├── D_accuracy
+│   │   ├── D_transparency
+│   │   ├── D_refuse
+│   │   ├── D_ethics
+│   │   └── D_format
+│   ├── dissatisfaction_overall_score
+│   ├── dissatisfaction_reason
+│   └── tactics (list)
+│       ├── tactic_type
+│       ├── tactic_prompt
+│       ├── tactic_prompt_chat_num
+│       ├── tactic_effectiveness_score
+│       ├── tactic_effectiveness_reason
+│       ├── tactic_theme
+│       └── tactic_code
+├── chat_shared_link
+└── chat_log (list)
+    ├── role
+    └── content
+created_at
 
 ```
 ## Description of Each field
