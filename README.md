@@ -132,7 +132,7 @@ created_at
 Our dataset includes actual conversation logs between users and ChatGPT.
 It may contain a risk of users' personal information leakage. To prevent this issue, we thoroughly reviewed all data and blocked the data that have a risk of personal information leakage into the following BLOCKED TYPE.
 
-### BLOCKED TYPE
+#### BLOCKED TYPE
 - [BLOCKED: LINK] : Blocked the chatgpt shared link
 - [BLOCKED: WHOLE CHAT] : Blocked the whole chat log
 - [BLOCKED: WHOLE RESPONSE] : Blocked the one chatgpt response entirely
