@@ -14,59 +14,59 @@ NOTE: Each field of this dataset is self-reported data from the user.
 
 ```
 user_id
-user_info
-├── age
-├── gender
-├── job
-├── first_language
-└── LLM_knowledge
-    ├── knowledge_level
-    └── knowledge_level_reason
-chatgpt_general_experiences
-├── chatgpt_usage_language
-│   ├── usage_language
-│   ├── writing_level
-│   └── reading_level
-├── chatgpt_usage_purpose
-├── chatgpt_usage_period
-├── chatgpt_usage_frequency
-└── chatgpt_overall_satisfaction
-    ├── satisfaction_level
-    └── satisfaction_level_reason
-chat_data_n
-├── chat_date
-├── memory_level
-├── model_version
-├── chat_usage_language
-├── chat_usage_language_reason
-├── chat_purpose
-├── why_chatgpt
-├── dissatisfaction_responses (list)
-│   ├── dissatisfaction_chatgpt_response 
-│   ├── dissatisfaction_chat_num
-│   ├── dissatisfaction_category_score
-│   │   ├── D_intent
-│   │   ├── D_depth
-│   │   ├── D_accuracy
-│   │   ├── D_transparency
-│   │   ├── D_refuse
-│   │   ├── D_ethics
-│   │   └── D_format
-│   ├── dissatisfaction_overall_score
-│   ├── dissatisfaction_reason
-│   └── tactics (list)
-│       ├── tactic_type
-│       ├── tactic_prompt
-│       ├── tactic_prompt_chat_num
-│       ├── tactic_effectiveness_score
-│       ├── tactic_effectiveness_reason
-│       ├── tactic_theme
-│       └── tactic_code
-├── chat_shared_link
-└── chat_log (list)
-    ├── role
-    └── content
-created_at
+├── user_info
+│   ├── age
+│   ├── gender
+│   ├── job
+│   ├── first_language
+│   └── LLM_knowledge
+│       ├── knowledge_level
+│       └── knowledge_level_reason
+├── chatgpt_general_experiences
+│   ├── chatgpt_usage_language
+│   │   ├── language
+│   │   ├── writing_level
+│   │   └── reading_level
+│   ├── chatgpt_usage_purpose
+│   ├── chatgpt_usage_period
+│   ├── chatgpt_usage_frequency
+│   └── chatgpt_overall_satisfaction
+│       ├── satisfaction_level
+│       └── satisfaction_level_reason
+├── chat_data_1
+│   ├── chat_date
+│   ├── memory_level
+│   ├── model_version
+│   ├── chat_usage_language
+│   ├── chat_usage_reason
+│   ├── chat_purpose
+│   ├── why_chatgpt
+│   ├── dissatisfaction_responses (list)
+│   │   ├── dissatisfaction_chatgpt_response 
+│   │   ├── dissatisfaction_chat_num
+│   │   ├── dissatisfaction_category_score
+│   │   │   ├── D_intent
+│   │   │   ├── D_depth
+│   │   │   ├── D_accuracy
+│   │   │   ├── D_transparency
+│   │   │   ├── D_refuse
+│   │   │   ├── D_ethics
+│   │   │   └── D_format
+│   │   ├── dissatisfaction_overall_score
+│   │   ├── dissatisfaction_reason
+│   │   └── tactics (list)
+│   │       ├── tactic_type
+│   │       ├── tactic_prompt
+│   │       ├── tactic_prompt_chat_num
+│   │       ├── tactic_effectiveness_score
+│   │       ├── tactic_effectiveness_reason
+│   │       ├── tactic_theme
+│   │       └── tactic_code
+│   ├── chat_shared_link
+│   └── chat_log (list)
+│       ├── role
+│       └── content
+└── created_at
 
 ```
 ## Description of Each field
@@ -141,92 +141,3 @@ It may contain a risk of users' personal information leakage. To prevent this is
 - [BLOCKED: PROPER NOUN] : Blocked the privacy related proper noun 
 - [BLOCKED: USER CONTENT] : Blocked user content such as user's phone number or email address.
 
-<!-- ```
-{
-    "user_id": "asdf1234", # user ID
-    "user_info":{
-        "age": 20, # user's age
-        "gender": "male", # user's gender 
-        "job": "student", 
-        "first_language": "English",
-        "LLM_knowledge": { # Knowledge level about LLM 
-            "knowledge_level": 3, # 0~7 (int)
-            "knowledge_level_reason": "I have been studying LLM for 3 years"
-            
-        }
-    }, 
-    "chatgpt_general_experiences": {
-        "chatgpt_usage_language": {
-            "language": "English",
-            "writing_level": 6, # The writing level about the 
-            "reading_level": 6
-        },
-        "chatgpt_usage_purpose": "I used it to get some useful information, summarisation, translation, etc.",
-        "chatgpt_usage_period": "I have been using chatgpt for 1 month",
-        "chatgpt_usage_frequency": "1 time a week",
-        "chatgpt_overall_satisfaction": {
-            "satisfaction_level": 5,
-            "satisfaction_level_reason": "I am satisfied with chatgpt because it is very useful"
-        }
-    },
-    "chat_data_1": {
-        "chat_date": "One week ago",
-        "memory_level": 3,
-        "model_version": "gpt3.5",
-        "chat_usage_language": {
-            "language": "English",
-            "usage_reason": "because this is my first language"
-        },
-        "chat_purpose": "I want to get some summarise of the article",
-        "why_chatgpt": "I thought it is good at summarising",
-        "dissatisfaction_responses": [
-            {
-                "dissatisfaction_chatgpt_response": "Of course, the best books of the year are subjective, but I think the best ...",
-                "dissatisfaction_chat_num": 2,
-                "dissatisfaction_category_score": {
-                    "D_intent": 0,
-                    "D_depth": 3,
-                    "D_accuracy": 7,
-                    "D_transparency": 0,
-                    "D_refuse": 0,
-                    "D_ethics": 0,
-                    "D_format": 8
-                },
-                "dissatisfaction_overall_score": 6,
-                "dissatisfaction_reason": "I think the summarisation is not accurate",
-                "tactic_type": "user_prompt",
-                "tactic_prompt": "Please give me more accurate summarisation",
-                "tactic_prompt_chat_num": 3,
-                "tactic_effectiveness_score": 8,
-                "tactic_effectiveness_reason": "I think the answer is more accurate than before",
-                "tactic_theme": "T_speficy",
-                "tactic_code": "T4"
-            }
-        ],
-        "chat_link": "https://chat.openai.com/share/aaaaa-aaaaa-aaaaa-aaaaa",
-        "chat_log": [
-            {
-                "role": "user",
-                "content": "Give me a summarisation of this article. Article title: The 10 Best Books of 2020, Content: The year’s notable fiction, poetry and nonfiction, selected by the editors of The New York Times Book Review..."
-            },
-            {
-                "role": "assistant",
-                "content": "Of course, the best books of the year are subjective, but I think the best ..."
-            },
-            {
-                "role": "user",
-                "content": "Please give me ore accurate summarisation"
-            },
-            {
-                "role": "assistant",
-                "content": "Sorry for my mistake. I will try to give you more accurate summarisation. The best book ..."
-            }
-        ]
-    },
-    "chat_data_2": {
-
-    }
-    
-}
-
-``` -->
