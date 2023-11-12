@@ -3,7 +3,8 @@ This dataset is released from the paper [Understanding Users’ Dissatisfaction 
 
 Access to the dataset is based on an **End-User License Agreement**. The use of the dataset is strictly restricted to **non-commercial research**. 
 
-💁 For those interested in full access, please make a request through this [link](https://forms.gle/VD4nmH2F2aoKn4WY9).
+💁 For those interested in full access, please make a request through this [Dataset Request Form](https://forms.gle/VD4nmH2F2aoKn4WY9).
+
 A sample of the dataset can be found in the `sample.json` file.
 
 ## Structure
