@@ -128,7 +128,7 @@ user_id
 | **created_at**                          	| string         	| The timestamp indicates the exact time when the data was created after receiving the user's response. response.                                                                                                                                                                                                                       	| 09/04/2023, 15:07:05                        	|
 
 
-## Data Security
+## Personal Information Protection
 Our dataset includes actual conversation logs between users and ChatGPT.
 It may contain a risk of users' personal information leakage. To prevent this issue, we thoroughly reviewed all data and masked the data that have a risk of personal information leakage into the following MASKED TYPE.
 
