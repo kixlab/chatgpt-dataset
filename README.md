@@ -1,14 +1,19 @@
 # Dataset Description
-This is a dataset released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]().
+This dataset is released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]().
 
+Access to the dataset is based on an **End-User License Agreement**. The use of the dataset is strictly restricted to **non-commercial research**. 
+
+💁 For those interested in full access, please make a request through this [link](https://forms.gle/VD4nmH2F2aoKn4WY9).
+A sample of the dataset can be found in the `sample.json` file.
+
+## Structure
 The dataset is hierarchically organized, comprising the following components:
 - User (N=94)
 - ChatGPT conversation links and logs (N=249)
 - User's recollected experience data on dissatisfactory ChatGPT responses (N=377)
 - User's strategies to respond to the dissatisfactory response (N=459)
 
-## Structure
-The dataset is in JSON format. The structure is as follows:
+The dataset is provided in JSON format and the structure is as follows:
 
 NOTE: Each field of this dataset is self-reported data from the user.
 
