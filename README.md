@@ -1,5 +1,5 @@
 # Dataset Description
-This dataset is released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level]().
+This dataset is released from the paper [Understanding Users’ Dissatisfaction with ChatGPT Responses: Types, Resolving Tactics, and the Effect of Knowledge Level](https://arxiv.org/abs/2311.07434).
 
 Access to the dataset is based on an **End-User License Agreement**. The use of the dataset is strictly restricted to **non-commercial research**. 
 
